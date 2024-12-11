@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园天气</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #weather {
+            margin-top: 20px;
+        }
+    </style>
+    <script src="js/tianqi.js"></script>
+</head>
+<body>
+<h1>校园天气</h1>
+<div id="location">
+    <label for="city">请输入城市名称:</label>
+    <input type="text" id="city" placeholder="如: Beijing(名称请输入英语)">
+    <button onclick="getWeather()">获取天气</button>
+</div>
+<div id="weather"></div>
+
+</body>
+</html>
